@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <form action="">
+        <!-- display screen -->
+        <div class="display">
+          <div class="firstDisplay" id="firstDisplay"></div>
+          <div class="secDisplay" id="secDisplay">0</div>
+        </div>
+        <!-- row 1 -->
+        <div class="row">
+          <input type="button" class="btn-opr" value="AC" id="acBtn">
+          <input type="button" class="btn-opr" value="DEL" id="delBtn">
+          <input type="button" class="btn-opr" value="^" id="powerBtn" data-operator>
+          <input type="button" class="btn-opr" value="÷" data-operator>
+        </div>
+        <!-- row 2 -->
+        <div class="row">
+          <input type="button" class="btn" value="7" data-number>
+          <input type="button" class="btn" value="8" data-number>
+          <input type="button" class="btn" value="9" data-number>
+          <input type="button" class="btn-opr" value="×" data-operator>
+        </div>
+        <!-- row 3 -->
+        <div class="row">
+          <input type="button" class="btn" value="4" data-number>
+          <input type="button" class="btn" value="5" data-number>
+          <input type="button" class="btn" value="6" data-number>
+          <input type="button" class="btn-opr" value="-" data-operator>
+        </div>
+        <!-- row 4 -->
+        <div class="row">
+          <input type="button" class="btn" value="1" data-number>
+          <input type="button" class="btn" value="2" data-number>
+          <input type="button" class="btn" value="3" data-number>
+          <input type="button" class="btn-opr" value="+" data-operator>
+        </div>
+        <!-- row 5 -->
+        <div class="row">
+          <input type="button" class="btn" value="00" data-number>
+          <input type="button" class="btn" value="0" data-number>
+          <input type="button" class="btn" value="." id="pointBtn">
+          <input type="button" class="btn-opr" value="=" id="equalBtn">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
